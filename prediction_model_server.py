@@ -10,7 +10,6 @@ import torchvision.transforms as transforms
 app = Flask(__name__)
 CORS(app)
 
-# Load your model here
 model = torch.load('model_23c_3000n_10e.pt')
 model.eval()
 
